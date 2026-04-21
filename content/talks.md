@@ -5,6 +5,7 @@ pager: false
 
 ### Conference presentations
 
+- **2026** - Celebrating James G. Mackinnon 75th Birthday Conference, Aarhus Center of Econometrics, Denmark. "Multi-Margin Selection in Leniency Designs" (Oral/Main Program).  
 - **2025** - World Congress of the Econometric Society, Seoul, South Korea. "Nonparametric Testability of Slutsky Symmetry" (Oral).  
 - **2025** - International Association for Applied Econometrics Annual Conference, Turin, Italy. "Nonparametric Testability of Slutsky Symmetry" (Oral).  
 - **2025** - Canadian Econometric Study Group Annual Meeting, Ottawa, Canada. "Nonparametric Testability of Slutsky Symmetry" (Poster).  
