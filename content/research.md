@@ -19,9 +19,9 @@ Judge leniency designs are widely used in empirical economics, but their convent
 
 ---
 
-#### A Locally Robust Semiparametric Approach to Examiner IV Designs - Reject and Resubmit, Journal of Econometrics (Revised version coming soon)  
+#### A Locally Robust Semiparametric Approach to Examiner IV Designs - Reject and Resubmit, Journal of Econometrics  
 **Author:** Lonjezo Sithole  
-[PDF](https://arxiv.org/abs/2404.19144)
+[PDF](/uploads/a-locally-robust-semiparametric-approach-to-examiner-iv-designs.pdf) (replaces an older [ArXiv version](https://arxiv.org/abs/2404.19144))
 
 Awarded the 2024 Outstanding Third Year Paper Prize.
 
