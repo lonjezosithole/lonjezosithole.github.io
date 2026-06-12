@@ -18,9 +18,6 @@ profiles:
 interests:
   - Causal Inference
   - Treatment Choice
-  - Statistical Optimal Transport
-  - Probabilistic Machine Learning
-  - Nonparametric and Semiparametric Bayesian Methods
   - Nonparametric Welfare Analysis
 
 education:
@@ -55,4 +52,4 @@ education:
 
 Hello! Welcome to my website.
 
-I am a fifth-year PhD candidate in Economics in the Department of Economics at the University of Michigan-Ann Arbor. My research interests mainly lie in econometrics, both theoretical and applied. I am particularly interested in applications of statistical optimal transport, probabilistic ML, as well as nonparametric and semiparametric methods (both frequentist and Bayesian) to econometric challenges in causal inference, treatment choice and nonparametric welfare analysis.
+I am a fifth-year PhD candidate in Economics in the Department of Economics at the University of Michigan-Ann Arbor. My research interests are in causal inference, treatment choice, and nonparametric welfare analysis. I use tools from statistical optimal transport, probabilistic machine learning, and nonparametric and semiparametric methods to study these problems.
