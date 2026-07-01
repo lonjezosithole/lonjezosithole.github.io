@@ -14,11 +14,6 @@ Judge leniency designs are widely used in empirical economics, but their convent
 
 ---
 
-#### Semisupervised Causal Inference with Unstructured Data - Draft coming soon  
-**Author:** Lonjezo Sithole
-
----
-
 #### A Locally Robust Semiparametric Approach to Examiner IV Designs - Reject and Resubmit, Journal of Econometrics  
 **Author:** Lonjezo Sithole  
 [PDF](/uploads/a-locally-robust-semiparametric-approach-to-examiner-iv-designs.pdf) (replaces an older [ArXiv version](https://arxiv.org/abs/2404.19144))
@@ -39,10 +34,17 @@ Economic theory implies strong limitations on what types of consumption behavior
 
 ---
 
-#### Maximum Overlap Component Analysis - Draft coming soon  
+### Work in Progress
+
+#### Semisupervised Causal Inference with Unstructured Data  
+**Author:** Lonjezo Sithole
+
+---
+
+#### Maximum Overlap Component Analysis  
 **Authors:** Florian Gunsilius, Lonjezo Sithole
 
-### Work in Progress
+---
 
 #### Nonparametric Tests of Weak and Strong Separability  
 **Authors:** Lonjezo Sithole, Florian Gunsilius, Per Hjertstrand
