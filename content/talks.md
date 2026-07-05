@@ -13,7 +13,7 @@ pager: false
 
 ### Discussions
 
-- **2025** - Canadian Econometric Study Group Annual Meeting. "Discrete Choice with Endogenous Peer Selection" (Kashaev and Lazzati, 2025).  
+- **2025** - Canadian Econometric Study Group Annual Meeting. "[Discrete Choice with Endogenous Peer Selection](https://arxiv.org/abs/2511.21446)" (Kashaev and Lazzati, 2025).  
 
 ### Seminars
 
