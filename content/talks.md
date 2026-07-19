@@ -5,6 +5,7 @@ pager: false
 
 ### Conference presentations
 
+- **2026** - Canadian Econometric Study Group Annual Meeting, Vancouver, Canada. "Multi-Margin Selection in Leniency Designs" (Plenary).  
 - **2026** - Bristol Econometrics Study Group, Bristol, United Kingdom. "Multi-Margin Selection in Leniency Designs" (Oral).  
 - **2026** - Celebrating James G. Mackinnon 75th Birthday Conference, Aarhus Center of Econometrics, Denmark. "Multi-Margin Selection in Leniency Designs" (Oral/Main Program).  
 - **2025** - World Congress of the Econometric Society, Seoul, South Korea. "Nonparametric Testability of Slutsky Symmetry" (Oral).  
