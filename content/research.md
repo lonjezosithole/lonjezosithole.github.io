@@ -7,11 +7,9 @@ pager: false
 
 > #### Multi-Margin Selection in Leniency Designs
 >
-> **Status:** Job Market Paper (New draft coming)
+> **Status:** Job Market Paper (New Draft Coming)
 >
 > **Author:** Lonjezo Sithole
->
-> **Links:** [PDF](/uploads/multi-margin-selection-in-leniency-designs.pdf)
 >
 > **Abstract.** Judge leniency designs are widely used in empirical economics, but their conventional interpretation relies on a single-index assumption: that judges differ only in overall strictness. I develop a latent-regime framework in which judge assignment can shift treatment along multiple latent margins, so decision-makers may differ in which case features they weight, not just in how strict they are overall. Under weak assumptions, the model identifies how many latent regimes are active; under stronger shape or parametric restrictions, it can point-identify the regime-specific outcome laws and mixture weights. The conventional Wald ratio then decomposes into regime-specific treatment effects with weights that depend on which judges are compared, yielding a direct test of whether a scalar leniency interpretation is adequate. In an application to felony bail decisions, the standard scalar leniency score fails the rank-1 benchmark for Black defendants but not for Non-Black defendants, implying that the same leniency variation has different economic content across groups. For the sentencing outcome, the estimated cross-race gap in the Wald ratio is driven primarily by which decision environments the instrument activates rather than by differences in what incarceration does within a given regime.
 
