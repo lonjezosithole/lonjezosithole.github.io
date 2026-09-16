@@ -1,5 +1,5 @@
 ---
-title: cv
+title: CV
 
 pager: false
 ---

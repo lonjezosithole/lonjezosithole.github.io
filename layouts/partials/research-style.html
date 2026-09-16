@@ -1,18 +1,10 @@
 <style id="research-style">
   .prose {
-    --research-ink: #26323d;
-    --research-text: #4b5563;
-    --research-link: #345570;
-    --research-rule: #dce1e5;
-    --research-hover: #f3f5f7;
-  }
-
-  .dark .prose {
-    --research-ink: #e5e9ef;
-    --research-text: #c0c8d2;
-    --research-link: #b0c7dd;
-    --research-rule: #374151;
-    --research-hover: #263241;
+    --research-ink: var(--site-ink);
+    --research-text: var(--site-text);
+    --research-link: var(--site-link);
+    --research-rule: var(--site-rule);
+    --research-hover: var(--site-hover);
   }
 
   /* Keep the existing paper markup, presented as a quiet reading list. */
@@ -28,7 +20,13 @@
     color: var(--research-text);
     font-size: 1rem;
     font-weight: 400;
+    font-style: normal;
     line-height: 1.65;
+  }
+
+  .prose blockquote p::before,
+  .prose blockquote p::after {
+    content: none;
   }
 
   .prose h3 {
@@ -40,7 +38,7 @@
   .dark .prose blockquote h4 {
     margin: 0 0 0.8rem;
     color: var(--research-ink);
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--site-heading-font);
     font-size: clamp(1.2rem, 1.1rem + 0.35vw, 1.4rem);
     font-weight: 600;
     line-height: 1.4;
@@ -86,6 +84,7 @@
   .prose blockquote details.paper-abstract summary,
   .dark .prose blockquote details.paper-abstract summary {
     display: list-item;
+    cursor: pointer;
     width: fit-content;
     padding: 0.45rem 0.1rem;
     border: 0;
