@@ -94,6 +94,36 @@
     background: rgba(4, 120, 87, 0.14);
     border-color: rgba(4, 120, 87, 0.42);
   }
+
+  .prose blockquote details.paper-abstract {
+    margin-top: 0.9rem;
+  }
+
+  .prose blockquote details.paper-abstract summary {
+    width: fit-content;
+    cursor: pointer;
+    list-style: none;
+    border-radius: 999px;
+    border: 1px solid rgba(4, 120, 87, 0.28);
+    background: rgba(4, 120, 87, 0.08);
+    padding: 0.22rem 0.68rem;
+    color: #047857;
+    font-weight: 800;
+    line-height: 1.35;
+  }
+
+  .prose blockquote details.paper-abstract summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .prose blockquote details.paper-abstract[open] summary {
+    margin-bottom: 0.75rem;
+  }
+
+  .prose blockquote details.paper-abstract p {
+    margin-top: 0;
+  }
+
   .dark .prose blockquote {
     border-left-color: #34d399;
     background: linear-gradient(135deg, rgba(52, 211, 153, 0.12), rgba(15, 23, 42, 0.42));
@@ -113,6 +143,12 @@
   .dark .prose blockquote a:hover {
     background: rgba(52, 211, 153, 0.18);
     border-color: rgba(52, 211, 153, 0.55);
+  }
+
+  .dark .prose blockquote details.paper-abstract summary {
+    border-color: rgba(52, 211, 153, 0.38);
+    background: rgba(52, 211, 153, 0.12);
+    color: #a7f3d0;
   }
 
   @media (max-width: 767px) {

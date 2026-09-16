@@ -18,6 +18,7 @@ pager: false
 
 ### Seminars
 
+- **Econometrics Seminar**, Fall 2026 - University of Michigan.
 - **Econometrics Student Workshop**, Winter 2026 - University of Michigan.  
 - **Labor Lunch Seminar**, Fall 2025 - University of Michigan.  
 - **Econometrics Student Workshop**, Winter 2025 - University of Michigan.  
