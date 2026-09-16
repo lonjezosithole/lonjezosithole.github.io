@@ -1,0 +1,124 @@
+<style id="research-style">
+  .prose {
+    --research-ink: #26323d;
+    --research-text: #4b5563;
+    --research-link: #345570;
+    --research-rule: #dce1e5;
+    --research-hover: #f3f5f7;
+  }
+
+  .dark .prose {
+    --research-ink: #e5e9ef;
+    --research-text: #c0c8d2;
+    --research-link: #b0c7dd;
+    --research-rule: #374151;
+    --research-hover: #263241;
+  }
+
+  /* Keep the existing paper markup, presented as a quiet reading list. */
+  .prose blockquote,
+  .dark .prose blockquote {
+    margin: 0;
+    padding: 1.6rem 0 1.8rem;
+    border: 0;
+    border-top: 1px solid var(--research-rule);
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    color: var(--research-text);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.65;
+  }
+
+  .prose h3 {
+    color: var(--research-ink);
+    margin-bottom: 1rem;
+  }
+
+  .prose blockquote h4,
+  .dark .prose blockquote h4 {
+    margin: 0 0 0.8rem;
+    color: var(--research-ink);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.2rem, 1.1rem + 0.35vw, 1.4rem);
+    font-weight: 600;
+    line-height: 1.4;
+    text-wrap: pretty;
+  }
+
+  .prose blockquote p {
+    margin: 0.4rem 0 0;
+    color: var(--research-text);
+  }
+
+  .prose blockquote strong {
+    color: var(--research-ink);
+    font-weight: 600;
+  }
+
+  .prose blockquote a,
+  .dark .prose blockquote a {
+    display: inline;
+    margin: 0 0.75rem 0 0;
+    padding: 0.2rem 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    color: var(--research-link);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+  }
+
+  .prose blockquote a:hover,
+  .dark .prose blockquote a:hover {
+    background: none;
+    color: var(--research-ink);
+    text-decoration-thickness: 2px;
+  }
+
+  .prose blockquote details.paper-abstract {
+    margin-top: 0.65rem;
+  }
+
+  .prose blockquote details.paper-abstract summary,
+  .dark .prose blockquote details.paper-abstract summary {
+    display: list-item;
+    width: fit-content;
+    padding: 0.45rem 0.1rem;
+    border: 0;
+    border-radius: 2px;
+    background: none;
+    color: var(--research-link);
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.5;
+    list-style: disclosure-closed inside;
+  }
+
+  .prose blockquote details.paper-abstract[open] summary {
+    list-style-type: disclosure-open;
+    margin-bottom: 0.65rem;
+  }
+
+  .prose blockquote details.paper-abstract summary::-webkit-details-marker {
+    display: inline;
+  }
+
+  .prose blockquote details.paper-abstract summary:hover {
+    background: var(--research-hover);
+  }
+
+  .prose blockquote a:focus-visible,
+  .prose blockquote details.paper-abstract summary:focus-visible {
+    outline: 2px solid var(--research-link);
+    outline-offset: 4px;
+  }
+
+  .prose blockquote details.paper-abstract p {
+    margin: 0;
+    line-height: 1.75;
+  }
+</style>

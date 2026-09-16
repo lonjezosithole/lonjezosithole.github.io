@@ -172,3 +172,6 @@
     }
   }
 </style>
+{{ if eq .RelPermalink "/research/" }}
+  {{ partial "research-style.html" . }}
+{{ end }}
