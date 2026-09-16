@@ -18,11 +18,11 @@ pager: false
 
 > #### A Locally Robust Semiparametric Approach to Examiner IV Designs
 >
-> **Status:** Revised and Resubmitted, Journal of Econometrics
+> **Status:** Reject and Resubmit, Journal of Econometrics
 >
 > **Author:** Lonjezo Sithole
 >
-> **Links:** [PDF](/uploads/a-locally-robust-semiparametric-approach-to-examiner-iv-designs.pdf) [arXiv v1](https://arxiv.org/abs/2404.19144)
+> **Links:** [arXiv version](https://arxiv.org/abs/2404.19144) [Older PDF version](/uploads/a-locally-robust-semiparametric-approach-to-examiner-iv-designs.pdf)
 >
 > **Award:** 2024 Outstanding Third Year Paper Prize
 >
