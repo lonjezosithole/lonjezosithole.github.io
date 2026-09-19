@@ -19,6 +19,9 @@ pager: false
 > "Lonje is a great instructor that greatly expanded my interest in economics and I am taking courses in the Fall that I likely would have never looked at if it were not for Lonje."
 > <span class="student-comment-source">Econ 251 (Undergraduate), Winter 2023</span>
 >
+> "Lonje is really enthusiastic about teaching and good at interacting with students during sessions. I enjoy his session very much."
+> <span class="student-comment-source">Econ 504 (Master of Applied Economics), Winter 2024</span>
+>
 > "I cannot speak highly enough of Lonje's enthusiasm with which he approaches teaching. He is incredibly prepared for each lecture and engages the class through his positivity and clear passion for the subject matter."
 > <span class="student-comment-source">Econ 672 (First-Year PhD), Winter 2026</span>
 >
