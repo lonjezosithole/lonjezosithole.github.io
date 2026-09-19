@@ -13,15 +13,6 @@ pager: false
 
 ### Selected Student Comments
 
-> "Lonjezo was the best aspect of Econ 251. He explained the material in a much clearer and more concise way than lecture, and prepared our section exceptionally well for exams."
-> <span class="student-comment-source">Econ 251 (Undergraduate), Fall 2022</span>
->
-> "Lonje is a great instructor that greatly expanded my interest in economics and I am taking courses in the Fall that I likely would have never looked at if it were not for Lonje."
-> <span class="student-comment-source">Econ 251 (Undergraduate), Winter 2023</span>
->
-> "Lonje is really enthusiastic about teaching and good at interacting with students during sessions. I enjoy his session very much."
-> <span class="student-comment-source">Econ 504 (Master of Applied Economics), Winter 2024</span>
->
 > "I cannot speak highly enough of Lonje's enthusiasm with which he approaches teaching. He is incredibly prepared for each lecture and engages the class through his positivity and clear passion for the subject matter."
 > <span class="student-comment-source">Econ 672 (First-Year PhD), Winter 2026</span>
 >
@@ -30,3 +21,12 @@ pager: false
 >
 > "He frequently goes the extra mile to tie problems we see in class to research and ongoing academic debates. He has a subject matter expertise that allows him to go beyond what would be expected of a typical GSI."
 > <span class="student-comment-source">Econ 672 (First-Year PhD), Winter 2026</span>
+>
+> "Lonje is really enthusiastic about teaching and good at interacting with students during sessions. I enjoy his session very much."
+> <span class="student-comment-source">Econ 504 (Master of Applied Economics), Winter 2024</span>
+>
+> "Lonjezo was the best aspect of Econ 251. He explained the material in a much clearer and more concise way than lecture, and prepared our section exceptionally well for exams."
+> <span class="student-comment-source">Econ 251 (Undergraduate), Fall 2022</span>
+>
+> "Lonje is a great instructor that greatly expanded my interest in economics and I am taking courses in the Fall that I likely would have never looked at if it were not for Lonje."
+> <span class="student-comment-source">Econ 251 (Undergraduate), Winter 2023</span>
