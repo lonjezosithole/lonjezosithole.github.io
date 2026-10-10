@@ -7,14 +7,11 @@ pager: false
 
 > #### Multi-Margin Selection in Leniency Designs
 >
-> **Status:** Job Market Paper (New Draft Coming)
+> **Status:** Job Market Paper (Draft Coming)
 >
 > **Author:** Lonjezo Sithole
 >
-> <details class="paper-abstract">
-> <summary>Abstract</summary>
-> <p>Leniency designs exploit quasi-random assignment to decision makers, with differences in their aggregate treatment propensities providing the first stage. When these decision makers systematically treat different cases differently, each decision maker&rsquo;s aggregate treatment propensity effectively collapses a vector of case-type specific treatment propensities into a single number. This number, however, obscures which types account for differences in treatment rates across decision makers and how their treatment effects compose the IV estimand. This paper proposes a model with finitely many latent regimes, each of which represents a case type with its own treatment responses and potential outcome distributions. The key identifying restriction is that, within each regime, each potential outcome distribution is invariant to decision maker assignment and observed treatment status. I provide conditions for identifying regime effects and treatment probabilities under parametric outcome restrictions or, with auxiliary pretreatment information, nonparametrically. I show that under the maintained model, the IV estimand decomposes into a weighted sum of regime effects, with weights that reflect each regime&rsquo;s contribution to the first stage. In the aggregate, opposing regime contributions can cancel. With the weights identified, I develop bootstrap tests of whether they are nonnegative and whether they remain constant across decision maker comparisons. Simulations calibrated to Miami-Dade bail data show that substantial biases in estimated regime contributions can cancel, leaving their sum nearly unbiased for the pooled IV estimand.</p>
-> </details>
+> **Links:** [Abstract (Michigan Econometrics Seminar)](https://lsa.umich.edu/econ/news-events/all-events.detail.html/151819-21912225.html)
 
 > #### A Locally Robust Semiparametric Approach to Examiner IV Designs
 >

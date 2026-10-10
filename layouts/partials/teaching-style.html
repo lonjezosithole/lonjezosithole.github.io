@@ -1,0 +1,142 @@
+<style id="teaching-evaluation-style">
+  .teaching-evaluations {
+    --evaluation-personal: #345570;
+    --evaluation-college: #8d969d;
+    --evaluation-university: #c4cbd1;
+    --evaluation-grid: rgba(100, 116, 139, 0.14);
+    --evaluation-label-width: 10.5rem;
+    --evaluation-gap: 1.25rem;
+  }
+
+  .dark .teaching-evaluations {
+    --evaluation-personal: #b0c7dd;
+    --evaluation-college: #87949f;
+    --evaluation-university: #536271;
+    --evaluation-grid: rgba(192, 200, 210, 0.12);
+  }
+
+  .prose .evaluation-intro {
+    margin: 0 0 1rem;
+  }
+
+  .evaluation-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.1rem;
+    color: var(--site-text);
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .evaluation-legend > span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .evaluation-legend i {
+    width: 0.8rem;
+    height: 0.55rem;
+    flex: none;
+  }
+
+  .evaluation-personal { background: var(--evaluation-personal); }
+  .evaluation-college { background: var(--evaluation-college); }
+  .evaluation-university { background: var(--evaluation-university); }
+
+  .prose .evaluation-chart {
+    margin: 1.75rem 0 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--site-rule);
+  }
+
+  .prose .evaluation-chart figcaption {
+    margin: 0 0 1.25rem;
+    color: var(--site-text);
+  }
+
+  .prose .evaluation-chart h4 {
+    margin: 0 0 0.3rem;
+    font-size: 1.2rem;
+  }
+
+  .evaluation-coverage {
+    display: block;
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+
+  .evaluation-metric {
+    display: grid;
+    grid-template-columns: var(--evaluation-label-width) minmax(0, 1fr);
+    align-items: center;
+    gap: var(--evaluation-gap);
+    margin-bottom: 1rem;
+  }
+
+  .evaluation-label {
+    font-size: 0.9rem;
+    line-height: 1.45;
+    color: var(--site-ink);
+  }
+
+  .evaluation-bars { min-width: 0; }
+
+  .evaluation-bar-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 2.5rem;
+    gap: 0.65rem;
+    align-items: center;
+    height: 1.2rem;
+  }
+
+  .evaluation-track {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, var(--evaluation-grid) 1px, transparent 1px);
+    background-size: 20% 100%;
+    border-right: 1px solid var(--evaluation-grid);
+  }
+
+  .evaluation-bar { display: block; height: 0.5rem; }
+
+  .evaluation-value {
+    font-variant-numeric: tabular-nums;
+    font-size: 0.8rem;
+    color: var(--site-text);
+    text-align: right;
+  }
+
+  .evaluation-bar-row:first-child .evaluation-value {
+    color: var(--site-ink);
+    font-weight: 600;
+  }
+
+  .evaluation-axis {
+    margin-left: calc(var(--evaluation-label-width) + var(--evaluation-gap));
+    padding-right: 3.15rem;
+  }
+
+  .evaluation-axis > div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: var(--site-text);
+  }
+
+  .evaluation-axis span { transform: translateX(-50%); }
+  .evaluation-axis span:last-child { transform: translateX(50%); }
+
+  .prose .evaluation-method {
+    margin-top: 1.75rem;
+    font-size: 0.8rem;
+    line-height: 1.65;
+  }
+
+  @media (max-width: 540px) {
+    .evaluation-metric { grid-template-columns: minmax(0, 1fr); gap: 0.4rem; }
+    .evaluation-axis { margin-left: 0; }
+    .evaluation-label { font-size: 0.875rem; }
+  }
+</style>

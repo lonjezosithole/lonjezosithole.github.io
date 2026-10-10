@@ -1,0 +1,88 @@
+{
+  "groups": [
+    {
+      "id": "phd",
+      "title": "PhD Courses",
+      "coverage": "ECON 672 (Winter 2026); ECON 675 (Fall 2024)",
+      "rows": [
+        {
+          "question": "Q230",
+          "label": "Prepared for class",
+          "personal": "4.90",
+          "college": "4.80",
+          "university": "4.80"
+        },
+        {
+          "question": "Q199",
+          "label": "Explained material clearly",
+          "personal": "4.90",
+          "college": "4.70",
+          "university": "4.70"
+        },
+        {
+          "question": "Q217",
+          "label": "Treated students with respect",
+          "personal": "5.00",
+          "college": "4.80",
+          "university": "4.80"
+        }
+      ]
+    },
+    {
+      "id": "masters",
+      "title": "Master's Courses",
+      "coverage": "ECON 503 (Fall 2023); ECON 504 (Winter 2024)",
+      "rows": [
+        {
+          "question": "Q230",
+          "label": "Prepared for class",
+          "personal": "4.93",
+          "college": "4.80",
+          "university": "4.80"
+        },
+        {
+          "question": "Q199",
+          "label": "Explained material clearly",
+          "personal": "4.93",
+          "college": "4.70",
+          "university": "4.70"
+        },
+        {
+          "question": "Q217",
+          "label": "Treated students with respect",
+          "personal": "4.95",
+          "college": "4.80",
+          "university": "4.80"
+        }
+      ]
+    },
+    {
+      "id": "undergraduate",
+      "title": "Undergraduate Courses",
+      "coverage": "ECON 251 (Fall 2022); ECON 251 (Winter 2023)",
+      "rows": [
+        {
+          "question": "Q230",
+          "label": "Prepared for class",
+          "personal": "4.68",
+          "college": "4.80",
+          "university": "4.80"
+        },
+        {
+          "question": "Q199",
+          "label": "Explained material clearly",
+          "personal": "4.78",
+          "college": "4.70",
+          "university": "4.70"
+        },
+        {
+          "question": "Q217",
+          "label": "Treated students with respect",
+          "personal": "4.95",
+          "college": "4.85",
+          "university": "4.80"
+        }
+      ]
+    }
+  ]
+}

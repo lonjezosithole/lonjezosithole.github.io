@@ -77,3 +77,6 @@
 {{ if eq .RelPermalink "/research/" }}
   {{ partial "research-style.html" . }}
 {{ end }}
+{{ if eq .RelPermalink "/teaching/" }}
+  {{ partial "teaching-style.html" . }}
+{{ end }}
