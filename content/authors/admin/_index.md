@@ -7,6 +7,7 @@ superuser: true
 highlight_name: true
 role: PhD Candidate in Economics
 avatar_crop: Top
+avatar_crop_size: "1260x1260"
 
 organizations:
   - name: University of Michigan – Department of Economics

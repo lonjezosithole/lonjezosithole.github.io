@@ -11,8 +11,6 @@ pager: false
 >
 > **Links:** [Abstract (Michigan Econometrics Seminar)](https://lsa.umich.edu/econ/news-events/all-events.detail.html/151819-21912225.html)
 
-> #### Anatomy of the First Stage with Ordered Treatments
-
 > #### A Locally Robust Semiparametric Approach to Examiner IV Designs
 >
 > **Status:** Reject and Resubmit, Journal of Econometrics
@@ -38,6 +36,10 @@ pager: false
 > <summary>Abstract</summary>
 > <p>Economic theory implies strong limitations on what types of consumption behavior are considered rational. Rationality implies that the Slutsky matrix, which captures the substitution effects of compensated price changes on demand for different goods, is symmetric and negative semi-definite. While empirically informed versions of negative semi-definiteness have been shown to be nonparametrically testable, the analogous question for Slutsky symmetry has remained open. Recently, it has even been shown that the symmetry condition is not testable via the average Slutsky matrix, prompting conjectures about its non-testability. We settle this question by deriving nonparametric conditional quantile restrictions on observable data that permit construction of a fully nonparametric test for Slutsky symmetry in an empirical setting with individual heterogeneity and endogeneity. The theoretical contribution is a multivariate generalization of identification results for partial effects in nonseparable models without monotonicity, which is of independent interest. This result has implications for different areas in econometric theory, including nonparametric welfare analysis with individual heterogeneity for which, in the case of more than two goods, the symmetry condition introduces a nonlinear correction factor.</p>
 > </details>
+
+> #### Anatomy of the First Stage with Ordered Treatments
+>
+> **Status:** Draft Coming
 
 ### Work in Progress
 
