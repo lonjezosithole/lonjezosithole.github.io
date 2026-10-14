@@ -6,6 +6,7 @@ last_name: Sithole
 superuser: true
 highlight_name: true
 role: PhD Candidate in Economics
+avatar_crop: Top
 
 organizations:
   - name: University of Michigan – Department of Economics
