@@ -11,6 +11,8 @@ pager: false
 >
 > **Links:** [Abstract (Michigan Econometrics Seminar)](https://lsa.umich.edu/econ/news-events/all-events.detail.html/151819-21912225.html)
 
+> #### Anatomy of the First Stage with Ordered Treatments
+
 > #### A Locally Robust Semiparametric Approach to Examiner IV Designs
 >
 > **Status:** Reject and Resubmit, Journal of Econometrics
