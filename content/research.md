@@ -9,15 +9,11 @@ pager: false
 >
 > **Status:** Job Market Paper (Draft Coming)
 >
-> **Author:** Lonjezo Sithole
->
 > **Links:** [Abstract (Michigan Econometrics Seminar)](https://lsa.umich.edu/econ/news-events/all-events.detail.html/151819-21912225.html)
 
 > #### A Locally Robust Semiparametric Approach to Examiner IV Designs
 >
 > **Status:** Reject and Resubmit, Journal of Econometrics
->
-> **Author:** Lonjezo Sithole
 >
 > **Links:** [arXiv version](https://arxiv.org/abs/2404.19144) [Older PDF version](/uploads/a-locally-robust-semiparametric-approach-to-examiner-iv-designs.pdf)
 >
@@ -32,7 +28,7 @@ pager: false
 >
 > **Status:** Submitted
 >
-> **Authors:** Florian Gunsilius, Lonjezo Sithole
+> **Coauthor:** Florian Gunsilius
 >
 > **Links:** [PDF](https://arxiv.org/abs/2505.05603)
 >
@@ -46,11 +42,9 @@ pager: false
 > #### Semisupervised Causal Inference with Unstructured Data
 >
 > **Status:** Work in Progress
->
-> **Author:** Lonjezo Sithole
 
 > #### Maximum Overlap Component Analysis
 >
 > **Status:** Work in Progress
 >
-> **Authors:** Florian Gunsilius, Lonjezo Sithole
+> **Coauthor:** Florian Gunsilius
