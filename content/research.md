@@ -15,7 +15,7 @@ pager: false
 >
 > **Status:** Reject and Resubmit, Journal of Econometrics
 >
-> **Links:** [arXiv version](https://arxiv.org/abs/2404.19144) [Older PDF version](/uploads/a-locally-robust-semiparametric-approach-to-examiner-iv-designs.pdf)
+> **Links:** [arXiv version](https://arxiv.org/abs/2404.19144)
 >
 > **Award:** 2024 Outstanding Third Year Paper Prize
 >
