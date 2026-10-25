@@ -40,9 +40,3 @@ pager: false
 > #### Semisupervised Causal Inference with Unstructured Data
 >
 > **Status:** Work in Progress
-
-> #### Maximum Overlap Component Analysis
->
-> **Status:** Work in Progress
->
-> **Coauthor:** Florian Gunsilius
