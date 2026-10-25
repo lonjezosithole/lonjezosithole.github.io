@@ -50,6 +50,9 @@ taxonomies:
 markup:
   _merge: deep
   goldmark:
+    parser:
+      attribute:
+        title: true
     renderer:
       unsafe: true
   highlight:

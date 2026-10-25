@@ -73,6 +73,10 @@ class TeachingEvaluationTests(unittest.TestCase):
         }
         for title, url in paper_links.items():
             self.assertIn(f"> #### [{title}]({url}", research)
+        for anchor in ["multi-margin-selection-in-leniency-designs",
+                       "a-locally-robust-semiparametric-approach-to-examiner-iv-designs",
+                       "nonparametric-testability-of-slutsky-symmetry"]:
+            self.assertIn(f"{{#{anchor}}}", research)
         self.assertNotIn("**Status:** Job Market Paper", research)
         self.assertNotIn("**Links:**", research)
         self.assertEqual(research.count("**Status:** Draft Coming"), 2)
