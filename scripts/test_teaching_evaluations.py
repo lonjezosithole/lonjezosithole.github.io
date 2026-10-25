@@ -64,8 +64,6 @@ class TeachingEvaluationTests(unittest.TestCase):
                     self.assertTrue(1 <= Decimal(row[series]) <= 5)
         research = (root / "content/research.md").read_text(encoding="utf-8")
         paper_links = {
-            "Multimargin Selection in Leniency Designs (Job Market Paper)":
-                "https://lsa.umich.edu/econ/news-events/all-events.detail.html/151819-21912225.html",
             "A Locally Robust Semiparametric Approach to Examiner IV Designs":
                 "https://arxiv.org/abs/2404.19144",
             "Nonparametric Testability of Slutsky Symmetry":
@@ -81,8 +79,14 @@ class TeachingEvaluationTests(unittest.TestCase):
         self.assertNotIn("**Links:**", research)
         self.assertEqual(research.count("**Status:** Draft Coming"), 2)
         self.assertNotIn("New Draft Coming", research)
-        self.assertIn("151819-21912225.html", research)
-        self.assertEqual(research.count('<details class="paper-abstract">'), 2)
+        self.assertNotIn("151819-21912225.html", research)
+        self.assertIn("> #### Multimargin Selection in Leniency Designs (Job Market Paper) {#", research)
+        self.assertNotIn("> #### [Multimargin Selection in Leniency Designs", research)
+        self.assertEqual(research.count('<details class="paper-abstract">'), 3)
+        jmp = research.split("> #### [A Locally Robust", 1)[0]
+        self.assertIn("<summary>Abstract</summary>", jmp)
+        self.assertIn("Leniency designs exploit quasi-random assignment of cases", jmp)
+        self.assertIn("pointwise asymptotically valid bootstrap tests of both restrictions", jmp)
 
 
 if __name__ == "__main__":

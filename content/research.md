@@ -5,9 +5,14 @@ pager: false
 
 ### Working Papers
 
-> #### [Multimargin Selection in Leniency Designs (Job Market Paper)](https://lsa.umich.edu/econ/news-events/all-events.detail.html/151819-21912225.html "Abstract (Michigan Econometrics Seminar)") {#multi-margin-selection-in-leniency-designs}
+> #### Multimargin Selection in Leniency Designs (Job Market Paper) {#multi-margin-selection-in-leniency-designs}
 >
 > **Status:** Draft Coming
+>
+> <details class="paper-abstract">
+> <summary>Abstract</summary>
+> <p>Leniency designs exploit quasi-random assignment of cases to decision makers with different propensities to assign treatment. When decision makers weight unobserved case characteristics differently, a higher overall treatment rate can mask a lower probability of treating certain case types. I develop a model with finitely many latent regimes, each representing a case type with its own potential outcome distributions and decision-maker-specific treatment propensities. The main identifying restriction is that, within each regime and covariate cell, each decision maker's treatment choice is independent of each potential outcome. Decision makers can thus select on potential outcomes across regimes, provided selection within each regime preserves the marginal distribution of each potential outcome. Under this restriction and quasi-random assignment, observed outcome distributions admit a finite mixture representation, and pairwise Wald estimands weight regime-specific average treatment effects by each regime's relative contribution to the first stage. Because these weights can be negative, the IV estimand can be negative even when every regime's average treatment effect is positive. I provide conditions for identifying the number of regimes, regime-specific average treatment effects, and IV weights using either parametric restrictions on outcome distributions or auxiliary pretreatment measurements. I also characterize when the weights are nonnegative and when they are constant across decision-maker pairs, and develop pointwise asymptotically valid bootstrap tests of both restrictions. Applied to pretrial bail decisions in Miami-Dade County, the model uncovers large differences in the sentencing effects of pretrial release across latent case types.</p>
+> </details>
 
 > #### [A Locally Robust Semiparametric Approach to Examiner IV Designs](https://arxiv.org/abs/2404.19144) {#a-locally-robust-semiparametric-approach-to-examiner-iv-designs}
 >
