@@ -63,7 +63,19 @@ class TeachingEvaluationTests(unittest.TestCase):
                 for series in SERIES:
                     self.assertTrue(1 <= Decimal(row[series]) <= 5)
         research = (root / "content/research.md").read_text(encoding="utf-8")
-        self.assertIn("Job Market Paper (Draft Coming)", research)
+        paper_links = {
+            "Multimargin Selection in Leniency Designs (Job Market Paper)":
+                "https://lsa.umich.edu/econ/news-events/all-events.detail.html/151819-21912225.html",
+            "A Locally Robust Semiparametric Approach to Examiner IV Designs":
+                "https://arxiv.org/abs/2404.19144",
+            "Nonparametric Testability of Slutsky Symmetry":
+                "https://arxiv.org/abs/2505.05603",
+        }
+        for title, url in paper_links.items():
+            self.assertIn(f"> #### [{title}]({url}", research)
+        self.assertNotIn("**Status:** Job Market Paper", research)
+        self.assertNotIn("**Links:**", research)
+        self.assertEqual(research.count("**Status:** Draft Coming"), 2)
         self.assertNotIn("New Draft Coming", research)
         self.assertIn("151819-21912225.html", research)
         self.assertEqual(research.count('<details class="paper-abstract">'), 2)

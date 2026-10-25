@@ -5,17 +5,13 @@ pager: false
 
 ### Working Papers
 
-> #### Multi-Margin Selection in Leniency Designs
+> #### [Multimargin Selection in Leniency Designs (Job Market Paper)](https://lsa.umich.edu/econ/news-events/all-events.detail.html/151819-21912225.html "Abstract (Michigan Econometrics Seminar)")
 >
-> **Status:** Job Market Paper (Draft Coming)
->
-> **Links:** [Abstract (Michigan Econometrics Seminar)](https://lsa.umich.edu/econ/news-events/all-events.detail.html/151819-21912225.html)
+> **Status:** Draft Coming
 
-> #### A Locally Robust Semiparametric Approach to Examiner IV Designs
+> #### [A Locally Robust Semiparametric Approach to Examiner IV Designs](https://arxiv.org/abs/2404.19144)
 >
 > **Status:** Reject and Resubmit, Journal of Econometrics
->
-> **Links:** [arXiv version](https://arxiv.org/abs/2404.19144)
 >
 > **Award:** 2024 Outstanding Third Year Paper Prize
 >
@@ -24,13 +20,11 @@ pager: false
 > <p>I propose a locally robust semiparametric framework for estimating causal effects using examiner IV designs when adjustment for many or continuous covariates makes saturation infeasible or produces sparse cells. The key ingredient of this approach is an orthogonal moment function that removes the first-order effect of estimation errors in the two treatment regressions defining the examiner IV. I derive the orthogonal moment function and show that it remains valid under misspecification when, for each treatment regression, either that regression or the corresponding Riesz representer in the influence function adjustment is correctly specified. The proposed framework not only allows estimation of the examiner IV using a wide range of nonparametric and machine learning techniques, including LASSO, neural networks and random forests, but also delivers root-<em>n</em> consistent estimation and valid inference under suitable regularity conditions. I examine the finite-sample performance of the estimator through Monte Carlo simulations. I also apply the method to US patent examiners, using regularized regressions to account for differences in technology and other application characteristics.</p>
 > </details>
 
-> #### Nonparametric Testability of Slutsky Symmetry
+> #### [Nonparametric Testability of Slutsky Symmetry](https://arxiv.org/abs/2505.05603)
 >
 > **Status:** Submitted
 >
 > **Coauthor:** Florian Gunsilius
->
-> **Links:** [PDF](https://arxiv.org/abs/2505.05603)
 >
 > <details class="paper-abstract">
 > <summary>Abstract</summary>
