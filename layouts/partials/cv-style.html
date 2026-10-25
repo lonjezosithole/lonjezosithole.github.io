@@ -1,0 +1,64 @@
+<style id="cv-style">
+  .cv-page {
+    width: 100%;
+    max-width: 64rem;
+    margin-inline: auto;
+    padding: 1rem 1.5rem 2rem;
+  }
+
+  .cv-header h1 {
+    margin: 0 0 1.25rem;
+  }
+
+  .cv-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cv-actions a {
+    color: var(--site-link);
+    font-size: 1rem;
+    line-height: 1.5;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  .cv-actions .cv-download {
+    padding: 0.65rem 1rem;
+    border: 1px solid var(--site-link);
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .cv-actions a:hover {
+    color: var(--site-ink);
+  }
+
+  .cv-actions .cv-download:hover {
+    background: var(--site-hover);
+  }
+
+  .cv-actions a:focus-visible {
+    outline: 2px solid var(--site-link);
+    outline-offset: 4px;
+  }
+
+  .cv-preview {
+    display: block;
+    width: 100%;
+    height: clamp(32rem, 80vh, 68rem);
+    border: 1px solid var(--site-rule);
+    border-radius: 4px;
+    background: var(--site-hover);
+  }
+
+  @media (max-width: 480px) {
+    .cv-page {
+      padding-inline: 1rem;
+    }
+  }
+</style>

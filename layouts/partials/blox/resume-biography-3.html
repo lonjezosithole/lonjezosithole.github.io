@@ -95,9 +95,9 @@
         {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
       {{ end }}
       <li>
-        <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}"
+        <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .label | default .icon }}"
            {{ with .label }} data-toggle="tooltip" data-placement="top" title="{{.}}"{{ end }}>
-          {{ partial "functions/get_icon" (dict "name" .icon "attributes" "style=\"height: 1.5rem;\"")  }}
+          {{ partial "functions/get_icon" (dict "name" .icon "attributes" "style=\"height: 1.5rem;\" aria-hidden=\"true\" focusable=\"false\"")  }}
         </a>
       </li>
       {{ end }}

@@ -1,7 +1,6 @@
 ---
-title: CV
-
+title: Curriculum Vitae
+layout: cv
+cv_pdf: /uploads/Lonjezo_Sithole_CV.pdf
 pager: false
 ---
-
-You can download my CV [here](/uploads/Lonjezo_Sithole_CV.pdf).

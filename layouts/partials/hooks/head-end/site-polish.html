@@ -36,6 +36,32 @@
     font-size: 1.05rem;
   }
 
+  #section-resume-biography-3 .network-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  #section-resume-biography-3 .network-icon li {
+    margin: 0;
+    padding: 0;
+  }
+
+  #section-resume-biography-3 .network-icon a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+  }
+
+  #section-resume-biography-3 .network-icon a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+  }
+
   #section-resume-biography-3 .bio-text p {
     font-size: 1.05rem;
     line-height: 1.75;
@@ -79,4 +105,7 @@
 {{ end }}
 {{ if eq .RelPermalink "/teaching/" }}
   {{ partial "teaching-style.html" . }}
+{{ end }}
+{{ if eq .RelPermalink "/cv/" }}
+  {{ partial "cv-style.html" . }}
 {{ end }}

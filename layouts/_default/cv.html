@@ -1,0 +1,15 @@
+{{ define "main" }}
+{{ $pdf := .Params.cv_pdf | relURL }}
+<main class="cv-page">
+  <header class="cv-header">
+    <h1>{{ .Title }}</h1>
+    <div class="cv-actions">
+      <a class="cv-download" href="{{ $pdf }}" download>Download CV (PDF)</a>
+      <a href="{{ $pdf }}" target="_blank" rel="noopener">Open in a new tab</a>
+    </div>
+  </header>
+  <iframe class="cv-preview" src="{{ $pdf }}#view=FitH&amp;navpanes=0"
+          title="Lonjezo Sithole's curriculum vitae" width="100%" height="1000">
+  </iframe>
+</main>
+{{ end }}

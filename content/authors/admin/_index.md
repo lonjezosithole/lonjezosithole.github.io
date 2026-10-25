@@ -16,6 +16,10 @@ organizations:
 profiles:
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/lonjezo-sithole-7b83b234/
+    label: LinkedIn
+  - icon: envelope
+    url: mailto:lsithole@umich.edu
+    label: Email lsithole@umich.edu
 
 interests:
   - Causal Inference
