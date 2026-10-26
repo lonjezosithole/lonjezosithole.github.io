@@ -86,7 +86,8 @@ class TeachingEvaluationTests(unittest.TestCase):
         jmp = research.split("> #### [A Locally Robust", 1)[0]
         self.assertNotIn("**Status:**", jmp)
         self.assertNotIn("Draft Coming", jmp)
-        self.assertIn("First posted: April 12, 2026.", jmp)
+        self.assertNotIn("First posted:", jmp)
+        self.assertIn("I show that pairwise Wald estimands", jmp)
         self.assertTrue((root / "static/uploads/JMP.pdf").read_bytes().startswith(b"%PDF-"))
         self.assertIn("<summary>Abstract</summary>", jmp)
         self.assertIn("Leniency designs exploit quasi-random assignment of cases", jmp)
