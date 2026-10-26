@@ -64,6 +64,8 @@ class TeachingEvaluationTests(unittest.TestCase):
                     self.assertTrue(1 <= Decimal(row[series]) <= 5)
         research = (root / "content/research.md").read_text(encoding="utf-8")
         paper_links = {
+            "Multimargin Selection in Leniency Designs (Job Market Paper)":
+                "/uploads/JMP.pdf",
             "A Locally Robust Semiparametric Approach to Examiner IV Designs":
                 "https://arxiv.org/abs/2404.19144",
             "Nonparametric Testability of Slutsky Symmetry":
@@ -77,16 +79,17 @@ class TeachingEvaluationTests(unittest.TestCase):
             self.assertIn(f"{{#{anchor}}}", research)
         self.assertNotIn("**Status:** Job Market Paper", research)
         self.assertNotIn("**Links:**", research)
-        self.assertEqual(research.count("**Status:** Draft Coming"), 2)
+        self.assertEqual(research.count("**Status:** Draft Coming"), 1)
         self.assertNotIn("New Draft Coming", research)
         self.assertNotIn("151819-21912225.html", research)
-        self.assertIn("> #### Multimargin Selection in Leniency Designs (Job Market Paper) {#", research)
-        self.assertNotIn("> #### [Multimargin Selection in Leniency Designs", research)
         self.assertEqual(research.count('<details class="paper-abstract">'), 3)
         jmp = research.split("> #### [A Locally Robust", 1)[0]
+        self.assertNotIn("**Status:**", jmp)
+        self.assertNotIn("Draft Coming", jmp)
+        self.assertTrue((root / "static/uploads/JMP.pdf").read_bytes().startswith(b"%PDF-"))
         self.assertIn("<summary>Abstract</summary>", jmp)
         self.assertIn("Leniency designs exploit quasi-random assignment of cases", jmp)
-        self.assertIn("pointwise asymptotically valid bootstrap tests of both restrictions", jmp)
+        self.assertIn("pointwise asymptotically valid bootstrap tests of both restrictions for a fixed number of regimes", jmp)
 
 
 if __name__ == "__main__":
