@@ -11,10 +11,6 @@ pager: false
 - **Fall 2023** - Econ 503 (Master of Applied Economics): Introduction to Probability and Statistics.
 - **Fall 2022 and Winter 2023** - Econ 251 (Undergraduate): Introduction to Econometrics.
 
-### Teaching Evaluations
-
-{{< teaching-evaluations >}}
-
 ### Selected Student Comments
 
 > "I cannot speak highly enough of Lonje's enthusiasm with which he approaches teaching. He is incredibly prepared for each lecture and engages the class through his positivity and clear passion for the subject matter."
@@ -34,3 +30,7 @@ pager: false
 >
 > "Lonje is a great instructor that greatly expanded my interest in economics and I am taking courses in the Fall that I likely would have never looked at if it were not for Lonje."
 > <span class="student-comment-source">Econ 251 (Undergraduate), Winter 2023</span>
+
+### Teaching Evaluations
+
+{{< teaching-evaluations >}}

@@ -1,35 +1,25 @@
-<div class="teaching-evaluations">
-  <p class="evaluation-intro">Average Course Median (five-point scale).</p>
-  <div class="evaluation-legend" aria-label="Chart legend">
-    <span><i class="evaluation-personal" aria-hidden="true"></i>Lonjezo Sithole</span>
-    <span><i class="evaluation-college" aria-hidden="true"></i>School/college</span>
-    <span><i class="evaluation-university" aria-hidden="true"></i>University</span>
-  </div>
+<figure class="teaching-evaluations" aria-labelledby="evaluation-caption" aria-describedby="evaluation-method">
+  <figcaption id="evaluation-caption" class="evaluation-intro">Average Course Median (out of 5).</figcaption>
   {{ range site.Data.teaching_evaluations.groups }}
-    <figure class="evaluation-chart" aria-labelledby="evaluation-{{ .id }}">
-      <figcaption>
+    {{ $group := . }}
+    <section class="evaluation-chart" aria-labelledby="evaluation-{{ .id }}">
+      <div class="evaluation-heading">
         <h4 id="evaluation-{{ .id }}">{{ .title }}</h4>
         <span class="evaluation-coverage">{{ .coverage }}</span>
-      </figcaption>
+      </div>
       {{ range .rows }}
-        {{ $row := . }}
         <div class="evaluation-metric">
           <div class="evaluation-label">{{ .label }}</div>
-          <div class="evaluation-bars">
-            {{ range slice (dict "key" "personal" "name" "Lonjezo Sithole") (dict "key" "college" "name" "School/college") (dict "key" "university" "name" "University") }}
-              {{ $value := index $row .key }}
-              <div class="evaluation-bar-row" role="img" aria-label="{{ $row.label }}: {{ .name }} {{ $value }} out of 5">
-                <div class="evaluation-track" aria-hidden="true">
-                  <span class="evaluation-bar evaluation-{{ .key }}" style="width: {{ mul (float $value) 20 }}%"></span>
-                </div>
-                <span class="evaluation-value" aria-hidden="true">{{ $value }}</span>
-              </div>
-            {{ end }}
+          <div class="evaluation-bar-row" role="img" aria-label="{{ $group.title }} - {{ .label }}: {{ .personal }} out of 5">
+            <div class="evaluation-track" aria-hidden="true">
+              <span class="evaluation-bar" style="width: {{ mul (float .personal) 20 }}%"></span>
+            </div>
+            <span class="evaluation-value" aria-hidden="true">{{ .personal }}</span>
           </div>
         </div>
       {{ end }}
       <div class="evaluation-axis" aria-hidden="true"><div><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div></div>
-    </figure>
+    </section>
   {{ end }}
-  <p class="evaluation-method">Source: University of Michigan instructor evaluation reports for the courses and terms listed. Scores and comparison benchmarks are averaged across these reports.</p>
-</div>
+  <p id="evaluation-method" class="evaluation-method">Source: University of Michigan instructor evaluation reports for the courses and terms listed. For each course level, scores are the unweighted averages of the medians in these reports.</p>
+</figure>
