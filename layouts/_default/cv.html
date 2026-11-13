@@ -1,5 +1,7 @@
 {{ define "main" }}
 {{ $pdf := .Params.cv_pdf | relURL }}
+{{ $pdfVersion := readFile (printf "static%s" .Params.cv_pdf) | sha256 }}
+{{ $pdf = printf "%s?v=%s" $pdf $pdfVersion }}
 <main class="cv-page">
   <header class="cv-header">
     <h1>{{ .Title }}</h1>

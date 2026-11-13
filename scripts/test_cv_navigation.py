@@ -27,6 +27,13 @@ class CVNavigationTests(unittest.TestCase):
         self.assertIn("name: CV", menu)
         self.assertTrue((ROOT / "content/contact.md").is_file())
 
+    def test_cv_refreshes_cached_pdf_when_file_changes(self):
+        template = (ROOT / "layouts/_default/cv.html").read_text(encoding="utf-8")
+        self.assertIn('readFile (printf "static%s" .Params.cv_pdf) | sha256', template)
+        self.assertIn('$pdf = printf "%s?v=%s" $pdf $pdfVersion', template)
+        self.assertEqual((ROOT / "static/uploads/Lonjezo_Sithole_CV.pdf").read_bytes(),
+                         (ROOT / "static/uploads/resume.pdf").read_bytes())
+
     def test_email_profile_follows_linkedin_and_has_accessible_label(self):
         profile = (ROOT / "content/authors/admin/_index.md").read_text(encoding="utf-8")
         profiles = profile.split("profiles:\n", 1)[1].split("\ninterests:", 1)[0]
