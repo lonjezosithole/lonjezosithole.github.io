@@ -1,0 +1,227 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{needspace}
+
+\setlength{\parskip}{0.25em}
+\setlength{\parindent}{0pt}
+
+% Never strand a single line at a page boundary.
+\clubpenalty=10000
+\widowpenalty=10000
+
+% --- Section headings -------------------------------------------------------
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\vspace{2pt}\titlerule]
+\titlespacing*{\section}{0pt}{1.05em}{0.55em}
+\titleformat{\subsection}{\normalsize\bfseries\itshape}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{0.9em}{0.35em}
+
+% --- List styles ------------------------------------------------------------
+% Chronological entries with a left-hand date column.
+\newlist{dated}{description}{1}
+\setlist[dated]{font=\normalfont, align=left, labelwidth=6.4em, leftmargin=7em,
+  labelsep=0.6em, itemsep=0.35em, topsep=0.25em, parsep=0pt, partopsep=0pt}
+
+% Entries with a hanging indent, so wrapped lines are clearly continuations.
+\newlist{hang}{itemize}{1}
+\setlist[hang]{label={}, labelsep=0pt, labelwidth=0pt, leftmargin=1.2em,
+  itemindent=-1.2em, itemsep=0.35em, topsep=0.2em, parsep=0pt, partopsep=0pt}
+
+% --- Page furniture ---------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[L]{\small Lonjezo Sithole}
+\fancyhead[R]{\small Page \thepage\ of \pageref{LastPage}}
+
+\fancypagestyle{firstpage}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \fancyfoot[R]{\small\itshape Last updated: November 2026}%
+}
+
+\begin{document}
+\thispagestyle{firstpage}
+
+% --- Header -----------------------------------------------------------------
+\begin{center}
+{\LARGE\bfseries Lonjezo Sithole}
+
+\vspace{0.3em}
+Ph.D.\ Candidate, Department of Economics, University of Michigan
+\end{center}
+
+\vspace{-0.2em}
+\begin{center}
+\href{mailto:lsithole@umich.edu}{lsithole@umich.edu}
+\quad\textbar\quad
+\href{https://lonjezosithole.github.io/}{lonjezosithole.github.io}
+\end{center}
+\vspace{2em}
+
+\section*{Education}
+\textbf{University of Michigan} \hfill Ann Arbor, MI \\
+Ph.D.\ Economics \hfill Expected Spring 2027 \\
+M.A.\ Economics (en route to Ph.D.) \hfill 2023
+
+\vspace{0.4em}
+\textbf{University of Edinburgh} \hfill Edinburgh, UK \\
+MSc Econometrics, with Distinction \hfill 2018--2019
+
+\vspace{0.4em}
+\textbf{University of Malawi} \hfill Zomba, Malawi \\
+M.A.\ Economics, with Distinction \hfill 2016--2018 \\
+Bachelor of Social Science (Economics), Upper Second Class \hfill 2008--2012
+
+\section*{Fields}
+Primary: Econometrics \\
+Secondary: Machine Learning, Applied Microeconomics
+
+\section*{Working Papers}
+\begin{hang}
+\item \href{https://lonjezosithole.github.io/research/}{\textit{Multimargin Selection in Leniency Designs}} \hfill \textbf{Job Market Paper}
+
+\item \textit{Anatomy of the First Stage with Ordered Treatments}
+
+\item \href{https://arxiv.org/abs/2404.19144}{\textit{A Locally Robust Semiparametric Approach to Examiner IV Designs}} \\
+Reject \& Resubmit, \textit{Journal of Econometrics}. Awarded the 2024 Outstanding Third Year Paper Prize. \href{https://arxiv.org/abs/2404.19144}{arXiv:2404.19144}
+
+\item \href{https://arxiv.org/abs/2505.05603}{\textit{Nonparametric Testability of Slutsky Symmetry}} (with Florian Gunsilius) \\
+Submitted. \href{https://arxiv.org/abs/2505.05603}{arXiv:2505.05603}
+\end{hang}
+
+\section*{Work in Progress}
+\begin{hang}
+\item \textit{Semisupervised Causal Inference with Unstructured Data}
+\end{hang}
+
+\section*{Fellowships \& Awards}
+\begin{dated}
+\item[2026--2027] Rackham Predoctoral Fellowship, University of Michigan
+\item[2025--2026] Conference Travel Grants: Rackham Graduate School (2025); Department of Economics (2025, 2026)
+\item[2025] Lawrence Klein Fellowship in Econometrics, University of Michigan
+\item[2024] Outstanding Third Year Paper Prize, University of Michigan
+\item[2021--2022] Summer Research Apprenticeships, University of Michigan
+\item[2021] William Haber Fellowship, University of Michigan
+\item[2019] Prize for the Best Econometrics Project, University of Edinburgh
+\item[2018--2019] Beit--Edinburgh Scholarship, University of Edinburgh
+\item[2016] Global Young Leader, Johnson \& Johnson
+\item[2012] Leader of Our Time, University of Malawi Graduating Class
+\item[2012] Defender of Academic Freedom, University of Malawi Academic Staff Union
+\item[2009--2010] Dean's Commendation for Best Performance, Faculty of Social Science, University of Malawi
+\end{dated}
+
+\section*{Presentations}
+\subsection*{Conference Presentations}
+\textit{Multimargin Selection in Leniency Designs}
+\begin{dated}
+\item[2026] 4th EconNect Africa Job Market Candidates' Symposium (Oral), Virtual
+\item[2026] Canadian Econometric Study Group Annual Meeting, Vancouver, Canada (Plenary)
+\item[2026] Econometric Society Australasia Meeting, Adelaide, Australia (Oral)
+\item[2026] Econometric Study Group Annual Conference, Bristol, United Kingdom (Oral)
+\item[2026] Celebrating James G. MacKinnon's 75th Birthday Conference, Aarhus Center of Econometrics, Denmark (Oral, Main Program)
+\end{dated}
+
+\vspace{0.5em}
+\needspace{5\baselineskip}
+\textit{Nonparametric Testability of Slutsky Symmetry}
+\begin{dated}
+\item[2025] World Congress of the Econometric Society, Seoul, South Korea (Oral)
+\item[2025] International Association for Applied Econometrics Annual Conference, Turin, Italy (Oral)
+\item[2025] Canadian Econometric Study Group Annual Meeting, Ottawa, Canada (Poster)
+\end{dated}
+
+\subsection*{Seminars}
+University of Michigan: Econometrics Seminar (2026); Econometrics Student Workshop (2025, 2026); Summer Econometrics Workshop (2025, two presentations); Labor Lunch Seminar (2024, 2025)
+
+\section*{Professional Service}
+\begin{hang}
+\item Referee: \textit{Journal of Econometrics}
+\item Discussant: \textit{Discrete Choice with Endogenous Peer Selection} (Kashaev \& Lazzati, 2025), 2025 Canadian Econometric Study Group Annual Meeting
+\end{hang}
+
+\needspace{10\baselineskip}
+\section*{Teaching}
+\textit{Graduate Student Instructor, University of Michigan}
+
+\vspace{0.3em}
+Econ 672 (First-Year Ph.D.): Econometric Analysis II \hfill Winter 2026 \\
+Econ 675 (Second-Year Ph.D.): Applied Microeconometrics \hfill Fall 2024, Fall 2025 \\
+\hspace*{1.25em}\textit{Also delivered guest lectures on double/debiased machine learning in both terms.} \\
+Econ 504 (Master of Applied Economics): Econometrics for Applied Economics \hfill Winter 2024 \\
+Econ 503 (Master of Applied Economics): Introduction to Probability \& Statistics \hfill Fall 2023 \\
+Econ 251 (Undergraduate): Introduction to Econometrics \hfill Fall 2022, Winter 2023
+
+\section*{Service \& Extracurriculars}
+\begin{dated}
+\item[2024--Present] Advisor, Graduate International Applications Network (GAIN), University of Zurich
+\item[2022--Present] Advisor, Global Health Corps, New York
+\item[2023] Co-Founder, Black Economics Graduate Students Society, University of Michigan
+\item[2023] Department Steward, Graduate Employees Organization, University of Michigan
+\item[2022--2024] Coordinator, Graduate International Applications Network---Alumni Chapter
+\item[2022] DEI Representative, Graduate Economics Society (GES), University of Michigan
+\item[2018--2019] Program Representative, University of Edinburgh
+\item[2010--2012] President, University of Malawi Students Union
+\end{dated}
+
+\section*{Previous Employment}
+\textbf{World Bank}, Washington, DC \hfill 2019--2021 \\
+Short-Term Consultant
+
+\vspace{0.4em}
+\textbf{Malawi National AIDS Commission}, Lilongwe, Malawi \hfill 2014--2018 \\
+Monitoring \& Evaluation Officer
+
+\vspace{0.4em}
+\textbf{Lighthouse Trust}, Lilongwe, Malawi \hfill 2013--2014 \\
+Monitoring \& Evaluation Fellow, Global Health Corps Fellowship (New York)
+
+\section*{Professional Memberships}
+Econometric Society; Institute of Mathematical Statistics; European Economic Association; Economic Association of Malawi
+
+\section*{Additional Information}
+\textbf{Citizenship:} Malawian \\
+\textbf{Software:} Advanced: R, Python, Git. Intermediate: Stata, Matlab. \\
+\textbf{Languages:} English (Fluent); French (A2--Beginner); Spanish (Beginner)
+
+\needspace{14\baselineskip}
+\section*{Dissertation Committee}
+\noindent
+\begin{minipage}[t]{0.47\textwidth}
+\textbf{Kaspar W\"uthrich} (Co-Chair) \\
+Department of Economics \\
+University of Michigan \\
+\href{mailto:kasparwu@umich.edu}{kasparwu@umich.edu}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\textwidth}
+\textbf{Florian Gunsilius} (Co-Chair) \\
+Department of Economics \\
+Emory University \\
+\href{mailto:fgunsil@emory.edu}{fgunsil@emory.edu}
+\end{minipage}
+
+\vspace{1em}
+\noindent
+\begin{minipage}[t]{0.47\textwidth}
+\textbf{Eva Janssens} \\
+Department of Economics \\
+University of Michigan \\
+\href{mailto:evaj@umich.edu}{evaj@umich.edu}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\textwidth}
+\textbf{Andreas Hagemann} \\
+Ross School of Business \\
+University of Michigan \\
+\href{mailto:hagem@umich.edu}{hagem@umich.edu}
+\end{minipage}
+
+\end{document}
+

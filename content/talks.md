@@ -5,6 +5,7 @@ pager: false
 
 ### Conference presentations
 
+- **2026** - 4th EconNect Africa Job Market Candidates' Symposium, Virtual. "Multimargin Selection in Leniency Designs" (Oral).
 - **2026** - Canadian Econometric Study Group Annual Meeting, Vancouver, Canada. "Multi-Margin Selection in Leniency Designs" (Plenary).  
 - **2026** - Econometric Society Australasia Meeting, Adelaide, Australia. "Multi-Margin Selection in Leniency Designs" (Oral).
 - **2026** - Bristol Econometrics Study Group, Bristol, United Kingdom. "Multi-Margin Selection in Leniency Designs" (Oral).  

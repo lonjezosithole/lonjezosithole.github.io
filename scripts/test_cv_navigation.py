@@ -34,6 +34,16 @@ class CVNavigationTests(unittest.TestCase):
         self.assertEqual((ROOT / "static/uploads/Lonjezo_Sithole_CV.pdf").read_bytes(),
                          (ROOT / "static/uploads/resume.pdf").read_bytes())
 
+    def test_econnect_symposium_is_in_talks_and_public_cv_source(self):
+        event = "4th EconNect Africa Job Market Candidates' Symposium"
+        talks = (ROOT / "content/talks.md").read_text(encoding="utf-8")
+        source = (ROOT / "cv/Lonjezo_Sithole_CV.tex").read_text(encoding="utf-8")
+        self.assertIn(f"**2026** - {event}, Virtual.", talks)
+        self.assertIn(f"\\item[2026] {event} (Oral), Virtual", source)
+        self.assertNotIn("London, United Kingdom", source)
+        self.assertIn("lonjezosithole.github.io", source)
+        self.assertIn("mailto:lsithole@umich.edu", source)
+
     def test_email_profile_follows_linkedin_and_has_accessible_label(self):
         profile = (ROOT / "content/authors/admin/_index.md").read_text(encoding="utf-8")
         profiles = profile.split("profiles:\n", 1)[1].split("\ninterests:", 1)[0]
