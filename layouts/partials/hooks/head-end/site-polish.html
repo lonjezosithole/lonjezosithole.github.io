@@ -1,5 +1,21 @@
 {{ partial "editorial-style.html" . }}
 <style>
+  @font-face {
+    font-family: "Source Sans 3";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('{{ "fonts/source-sans-3/SourceSans3-Regular.ttf.woff2" | relURL }}') format('woff2');
+  }
+
+  @font-face {
+    font-family: "Source Sans 3";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('{{ "fonts/source-sans-3/SourceSans3-Semibold.ttf.woff2" | relURL }}') format('woff2');
+  }
+
   /* Job-market homepage polish. Keep overrides scoped to the biography block. */
   #section-resume-biography-3 .resume-biography {
     max-width: 1120px;
@@ -64,6 +80,7 @@
 
   #section-resume-biography-3 .bio-text p {
     color: #e5e9ef;
+    font-family: "Source Sans 3", "Inter var", sans-serif;
     font-size: 1.05rem;
     line-height: 1.75;
   }
