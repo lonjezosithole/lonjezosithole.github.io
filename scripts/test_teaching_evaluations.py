@@ -104,6 +104,7 @@ class TeachingEvaluationTests(unittest.TestCase):
         self.assertIn("A binary instrument can move different people across different thresholds", paper)
         self.assertIn("simultaneous confidence intervals for finitely many prespecified bounds", paper)
         self.assertIn("the IV estimand for the ordered treatment", paper)
+        self.assertIn("the joint identified set implies bounds on the weights the IV estimand", paper)
         self.assertNotIn("IV coefficient", paper)
         self.assertIn("by 0.27, whereas separate first-stage bounds permit 0.53.</p>", paper)
         self.assertIn("</details>", paper)
