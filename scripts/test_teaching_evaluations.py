@@ -102,7 +102,8 @@ class TeachingEvaluationTests(unittest.TestCase):
         self.assertIn('<details class="paper-abstract">', paper)
         self.assertIn("<summary>Abstract</summary>", paper)
         self.assertIn("A binary instrument can move different people across different thresholds", paper)
-        self.assertIn("by 0.27, whereas separate first-stage bounds permit a weight as large as 0.53.</p>", paper)
+        self.assertIn("simultaneous confidence intervals for finitely many prespecified bounds", paper)
+        self.assertIn("by 0.27, whereas separate first-stage bounds permit 0.53.</p>", paper)
         self.assertIn("</details>", paper)
         self.assertNotIn(" open", paper)
 
