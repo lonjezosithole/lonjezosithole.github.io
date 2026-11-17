@@ -1,6 +1,7 @@
 <style id="editorial-style">
   :root {
     --site-heading-font: Georgia, "Times New Roman", serif;
+    --site-body-font: "Source Sans 3", "Inter var", sans-serif;
     --site-ink: #26323d;
     --site-text: #4b5563;
     --site-link: #345570;
@@ -26,6 +27,12 @@
     --site-rule: #374151;
     --site-hover: #263241;
   }
+
+  {{ if not .IsHome }}
+  .page-body {
+    font-family: var(--site-body-font);
+  }
+  {{ end }}
 
   .navbar-brand {
     font-family: var(--site-heading-font);
@@ -135,7 +142,7 @@
     margin: 0;
     padding: 1.3rem 0;
     border-top: 1px solid var(--site-rule);
-    font-family: var(--site-heading-font);
+    font-family: var(--site-body-font);
     font-size: 1.125rem;
     line-height: 1.8;
   }
@@ -148,7 +155,7 @@
   .prose blockquote .student-comment-source {
     display: block;
     margin-top: 0.65rem;
-    font-family: var(--font-sans, ui-sans-serif, sans-serif);
+    font-family: var(--site-body-font);
     font-size: 0.875rem;
     line-height: 1.5;
   }
