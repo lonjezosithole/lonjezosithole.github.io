@@ -107,6 +107,8 @@ class TeachingEvaluationTests(unittest.TestCase):
         self.assertIn("the joint identified set bounds the weights on causal responses at each treatment increment", paper)
         self.assertIn("the Wald estimand based on the original treatment levels.", paper)
         self.assertNotIn("IV coefficient", paper)
+        self.assertIn("In an application to Project STAR, an indicator for any small-class participation", paper)
+        self.assertNotIn("In Project STAR,", paper)
         self.assertIn("by 0.27, whereas separate first-stage bounds permit 0.53.</p>", paper)
         self.assertIn("</details>", paper)
         self.assertNotIn(" open", paper)
