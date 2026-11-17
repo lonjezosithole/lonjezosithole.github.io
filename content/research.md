@@ -37,6 +37,11 @@ pager: false
 > #### Anatomy of the First Stage with Ordered Treatments
 >
 > **Status:** Draft Coming
+>
+> <details class="paper-abstract">
+> <summary>Abstract</summary>
+> <p>A binary instrument can move different people across different thresholds of an ordered treatment. Under instrument independence and monotonicity, the difference between the treatment distributions observed under the two instrument values identifies the proportion of units crossing each threshold, the first stage at that threshold. These distributions, however, do not reveal whether one person crosses several thresholds or different people cross the thresholds. I show that, when every treatment level occurs under both instrument values and every first stage is positive, any identified linear function of treatment changes is a linear combination of these first stages. Thus, with at least three treatment levels, the proportion of switchers (units whose treatment changes) and the probability of each upward treatment transition are not identified, and I derive their sharp bounds. When only broad ordered categories of the treatment are observed, in general only the first stages at category boundaries remain identified. I derive the sharp joint identified set for the first stages inside the categories in closed form. Under exclusion for the original treatment, this set implies sharp bounds on the weights that the IV coefficient for the ordered treatment places on causal responses at each treatment increment. For inference, I construct simultaneous confidence intervals for the coarsening bounds that remain valid when these bounds are not differentiable in the observed category probabilities. In Project STAR, a binary measure of small-class participation bounds the weight on the fourth-year increment by 0.27, whereas separate first-stage bounds permit a weight as large as 0.53.</p>
+> </details>
 
 ### Work in Progress
 

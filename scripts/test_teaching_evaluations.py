@@ -82,7 +82,7 @@ class TeachingEvaluationTests(unittest.TestCase):
         self.assertEqual(research.count("**Status:** Draft Coming"), 1)
         self.assertNotIn("New Draft Coming", research)
         self.assertNotIn("151819-21912225.html", research)
-        self.assertEqual(research.count('<details class="paper-abstract">'), 3)
+        self.assertEqual(research.count('<details class="paper-abstract">'), 4)
         jmp = research.split("> #### [A Locally Robust", 1)[0]
         self.assertNotIn("**Status:**", jmp)
         self.assertNotIn("Draft Coming", jmp)
@@ -92,6 +92,19 @@ class TeachingEvaluationTests(unittest.TestCase):
         self.assertIn("<summary>Abstract</summary>", jmp)
         self.assertIn("Leniency designs exploit quasi-random assignment of cases", jmp)
         self.assertIn("pointwise asymptotically valid bootstrap tests of both restrictions for a fixed number of regimes", jmp)
+
+    def test_ordered_treatment_paper_has_collapsed_abstract(self):
+        root = Path(__file__).resolve().parents[1]
+        research = (root / "content/research.md").read_text(encoding="utf-8")
+        paper = research.split("> #### Anatomy of the First Stage with Ordered Treatments", 1)[1]
+        paper = paper.split("### Work in Progress", 1)[0]
+        self.assertIn("**Status:** Draft Coming", paper)
+        self.assertIn('<details class="paper-abstract">', paper)
+        self.assertIn("<summary>Abstract</summary>", paper)
+        self.assertIn("A binary instrument can move different people across different thresholds", paper)
+        self.assertIn("by 0.27, whereas separate first-stage bounds permit a weight as large as 0.53.</p>", paper)
+        self.assertIn("</details>", paper)
+        self.assertNotIn(" open", paper)
 
 
 if __name__ == "__main__":
