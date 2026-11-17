@@ -10,10 +10,10 @@ class HomepagePresentationTests(unittest.TestCase):
     def setUp(self):
         self.css = (ROOT / "layouts/partials/hooks/head-end/site-polish.html").read_text()
 
-    def test_bio_keeps_soft_white_and_existing_type_size(self):
+    def test_bio_keeps_soft_white_and_uses_shared_reading_size(self):
         rule = re.search(r"\.bio-text p\s*\{([^}]+)\}", self.css).group(1)
         self.assertIn("color: #e5e9ef;", rule)
-        self.assertIn("font-size: 1.05rem;", rule)
+        self.assertIn("font-size: var(--site-body-size);", rule)
         self.assertIn("line-height: 1.75;", rule)
         self.assertNotIn("font-weight:", rule)
 

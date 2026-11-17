@@ -38,8 +38,26 @@ class EditorialTypographyTests(unittest.TestCase):
     def test_navigation_keeps_its_existing_font(self):
         rule = re.search(r"\.nav-link\s*\{([^}]+)\}", self.css).group(1)
         self.assertNotIn("font-family:", rule)
+        self.assertNotIn("font-size:", rule)
         brand = re.search(r"\.navbar-brand\s*\{([^}]+)\}", self.css).group(1)
         self.assertIn("font-family: var(--site-heading-font);", brand)
+
+    def test_main_reading_text_uses_slightly_larger_shared_size(self):
+        self.assertIn("--site-body-size: 1.125rem;", self.css)
+        rule = re.search(r"\.prose p,\s*\.prose li\s*\{([^}]+)\}", self.css).group(1)
+        self.assertIn("font-size: var(--site-body-size);", rule)
+        self.assertIn("line-height: 1.75;", rule)
+        cv_css = (ROOT / "layouts/partials/cv-style.html").read_text()
+        cv_rule = re.search(r"\.cv-actions a\s*\{([^}]+)\}", cv_css).group(1)
+        self.assertIn("font-size: var(--site-body-size);", cv_rule)
+
+    def test_quotes_and_supporting_labels_keep_existing_sizes(self):
+        quote = re.search(r"\.prose blockquote p\s*\{([^}]+)\}", self.css).group(1)
+        self.assertIn("font-size: 1.125rem;", quote)
+        attribution = re.search(
+            r"\.prose blockquote \.student-comment-source\s*\{([^}]+)\}", self.css
+        ).group(1)
+        self.assertIn("font-size: 0.875rem;", attribution)
 
 
 if __name__ == "__main__":
